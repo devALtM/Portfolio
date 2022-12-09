@@ -1,0 +1,148 @@
+print("""Hello!
+Welcome to the Temperature Converter.
+Please, choose a unit.
+ """)
+options = 'y'
+while True:
+#-----------------------------------------------------------------------------------
+#Temperature
+    if options == 'y':
+        unit = input('Which unit do you want to use? ')
+#C-F-C
+    if unit == 'c2f':
+        c2f = float(input('Type the value in Celsius: '))
+        f = (c2f * 1.8) + 32
+        print('The temperature is', f, 'Fahrenheit.')
+    if unit == 'f2c':
+        f2c = float(input('Type the value in Fahrenheit: '))
+        c = (f2c - 32) / 1.8
+        print('The temperature is', c, 'Celsius')
+# C-K-C
+    if unit == 'c2k':
+        c2k = float(input('Type the value in Celsius: '))
+        k = c2k + 273
+        print('The temperature is', k, 'Kelvin.')
+    if unit == 'k2c':
+        k2c = float(input('Type the value in Celsius: '))
+        c = k2c - 272
+        print('The temperature is', c, 'Celsius')
+# K-F-K
+    if unit == 'k2f':
+        k2f = float(input('Type the value in Kelvin: '))
+        f = (k2f - 273) * 1.8 + 32
+        print('The temperature is', f, 'Fahrenheit')
+    if unit == 'f2k':
+        f2k = float(input('Type teh value in Fahrenheit: '))
+        k = (f2k - 32) * 5 / 9 + 273
+        print('The tempretaure is', k, 'Kelvin')
+#-----------------------------------------------------------------------------------
+#Length
+#km-m-km
+    if unit == 'km2m':
+        km2m = float(input('Type the value in kilometers: '))
+        m = km2m * 1000
+        print('The value is', m, 'meters.')
+    if unit == 'm2km':
+        m2km = float(input('Type the value in meters: '))
+        km = m2km / 1000
+        print('The value is', km, 'kilometers.')
+#m-cm-m
+    if unit == 'm2cm':
+        m2cm = float(input('Type the value in meters: '))
+        cm = m2cm / 0.01
+        print('The value is', cm, 'centimeters.')
+    if unit == 'cm2m':
+        cm2m = float(input('Type the value in centimeters: '))
+        m = cm2m / 100
+        print('The value is', m, 'meters.')
+#cm-mm-cm
+    if unit == 'cm2mm':
+        cm2mm = float(input('Type the value in centimeters: '))
+        mm = cm2mm / 0.1
+        print('The value is', mm, 'milimeters.')
+    if unit == 'mm2cm':
+        mm2cm = float(input('Type the value in milimeters: '))
+        cm = mm2cm / 10
+        print('The value is', cm, 'centimeters.')
+#cm-inch-cm
+    if unit == 'cm2inch':
+        cm2inch = float(input('Type the value in centimeters: '))
+        inch = cm2inch * 0.39370
+        print('The value is', inch, 'inches.')
+    if unit == 'inch2cm':
+        inch2cm = float(input('Type the value in inches: '))
+        cm = inch2cm / 0.39370
+        print('The value is', cm, 'centimeters.')
+#m-ft-m
+    if unit == 'm2ft':
+        m2ft = float(input('Type the value in meters: '))
+        ft = m2ft * 3.2808
+        print('The value is', ft, 'feet.')
+    if unit == 'ft2m':
+        ft2m = float(input('Type the value in feet: '))
+        m = ft2m / 3.2808
+        print('The value is', m, 'meters.')
+
+#km-mi-km
+    if unit == 'km2mi':
+        km2mi = float(input('Type the value in kilometers: '))
+        mi = km2mi * 0.62137
+        print('The value is', mi, 'miles.')
+    if unit == 'mi2km':
+        mi2km = float(input('Type the value in miles: '))
+        km = mi2km / 0.62137
+        print('The value is', km, 'kilometers.')
+#-----------------------------------------------------------------------------------
+#Time
+#hr-min-hr
+    if unit == 'hr2min':
+        hr2min = float(input('Type the value in hours: '))
+        min = hr2min * 60
+        print('The value is', min,'minutes.')
+    if unit == 'min2hr':
+        min2hr = float(input('Type the value in minnutes: '))
+        hr = min2hr / 60
+        print('The value is', hr,'hours.')
+#min-sec-min
+    if unit == 'min2sec':
+        min2sec = float(input('Type the value in minutes: '))
+        sec = min2sec * 60
+        print('The value is', sec,'seconds.')
+    if unit == 'sec2min':
+        sec2min = float(input('Type the value in seconds: '))
+        min = sec2min / 60
+        print('The value is', min,'minutes.')
+#-----------------------------------------------------------------------------------
+#Mass
+#kg-g-kg
+    if unit == 'kg2g':
+        kg2g = float(input('Type the value in kilograms: '))
+        g = kg2g * 1000
+        print('The value is', g,'grams.')
+    if unit == 'g2kg':
+        g2kg = float(input('Type the value in grams: '))
+        kg = g2kg / 1000
+        print('The value is', kg,'kilograms.')
+#g-mg-g
+    if unit == 'g2mg':
+        g2mg = float(input('Type the value in grams: '))
+        mg = g2mg * 1000
+        print('The value is', mg,'miligrams.')
+    if unit == 'mg2g':
+        mg2g = float(input('Type the value in miligrams: '))
+        g = mg2g / 1000
+        print('The value is', g,'grams.')
+#kg-mg-kg
+    if unit == 'kg2mg':
+        kg2mg = float(input('Type the value in kilograms: '))
+        mg = kg2mg * 1000000
+        print('The value is', mg,'miligrams.')
+    if unit == 'mg2kg':
+        mg2kg = float(input('Type the value in miligrams: '))
+        kg = mg2kg / 1000000
+        print('The value is', kg,'kilograms.')
+
+    options = input('Do you want to change scale? (y/n/e(x)it: ')
+    if options == 'x':
+        print('Finishing the program...')
+        break
