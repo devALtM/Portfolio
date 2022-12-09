@@ -1,3 +1,5 @@
+# Copyright © 2022 devALtM
+
 print("""Hello!
 Welcome to the Temperature Converter.
 Please, choose a unit.
